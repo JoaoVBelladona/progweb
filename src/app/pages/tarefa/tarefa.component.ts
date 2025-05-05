@@ -29,7 +29,6 @@ export class TarefaComponent {
       descricao:this.descricao, 
       concluida:this.concluido,
     });
-    this.titulo = '';
     Swal.fire({
       icon: 'success',
       title: 'sucesso',
