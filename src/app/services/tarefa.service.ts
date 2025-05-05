@@ -30,12 +30,6 @@ export class TarefaService {
     addDoc(ref, novaTarefa);
   }
 
-  add(tituloTarefa: string) {
-    this.tarefas.push({
-      titulo: tituloTarefa,
-      concluida: false,
-    });
-  }
   listar(): Observable<Tarefa[]> {
     const ref = collection(this.firestore, 'tarefas');
     return collectionData(ref, { 'idField': 'id' }) as Observable<Tarefa[]>;
