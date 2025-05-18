@@ -39,4 +39,12 @@ export class HomeComponent {
       }
     } );
   }
+
+  alteraSituacao( tarefa: Tarefa){
+    this.servico.addTarefa({
+    titulo: tarefa.titulo,
+    descricao: tarefa.descricao,
+    id: tarefa.id});
+  }
+
 }

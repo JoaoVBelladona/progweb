@@ -13,7 +13,6 @@ import { Observable } from 'rxjs';
 export interface Tarefa {
   titulo: string;
   descricao?: string;
-  concluida: boolean;
   id?: string;
 }
 
@@ -31,7 +30,9 @@ export class TarefaService {
       // Atualizacao
       //pega a tarefa especifica acessada em sua chave
     const tarefa = doc(ref, novaTarefa.id);
-        updateDoc(tarefa, {novaTarefa});
+        updateDoc(tarefa, {
+            titulo: novaTarefa.titulo
+        });
         return Promise.resolve(novaTarefa.id);
 
     }else{

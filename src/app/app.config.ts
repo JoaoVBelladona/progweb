@@ -6,12 +6,12 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { routes } from './app.routes';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBXSTKGMRqlfXvIuXz5pP-Jgu0RTitX3B4',
-  authDomain: 'larissalinda-meubem.firebaseapp.com',
-  projectId: 'larissalinda-meubem',
-  storageBucket: 'larissalinda-meubem.firebasestorage.app',
-  messagingSenderId: '513751179817',
-  appId: '1:513751179817:web:cf9fd222b48abbf33bf238',
+    apiKey: "AIzaSyDrfF650QpM7cq6VDtkcI2UyNyVRnj3HMo",
+    authDomain: "praticaangularfirebase.firebaseapp.com",
+    projectId: "praticaangularfirebase",
+    storageBucket: "praticaangularfirebase.firebasestorage.app",
+    messagingSenderId: "550751319305",
+    appId: "1:550751319305:web:02f4bf8e2ac800008fcfd8"
 };
 
 export const appConfig: ApplicationConfig = {

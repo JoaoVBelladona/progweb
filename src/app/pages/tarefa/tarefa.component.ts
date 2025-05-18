@@ -27,7 +27,6 @@ export class TarefaComponent {
     this.tarefaService.addTarefa({
       titulo:this.titulo, 
       descricao:this.descricao, 
-      concluida:this.concluido,
     });
     Swal.fire({
       icon: 'success',

@@ -1,4 +1,4 @@
-<h1>Sistema de tarefas</h1>
+<h1>Lista de contatos</h1>
 <hr />
 <a href="/tarefa" mat-raised-button>
   <mat-icon>add</mat-icon>
@@ -8,7 +8,6 @@
 <ol>
   <li *ngFor="let t of tarefas">
     {{ t.titulo }}
-    <mat-slide-toggle [(ngModel)]="t.concluida"></mat-slide-toggle>
     <button mat-raised-button (click) = "excluirTarefa(t.id!)"> x </button>
   </li>
 
